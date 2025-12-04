@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+
+# Virtualenv (Poetry will store in .venv if configured)
+.venv/
+
+# PyCharm
+.idea/
+
+# MLflow artifacts
+mlflow/
+
+# HuggingFace cache
+huggingface/
+
+# Models
+models/
+
