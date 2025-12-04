@@ -1,0 +1,25 @@
+[project]
+name = "llm-rag-bot"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Leonid Naydanov",email = "najdanov.2020@stud.nstu.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "fastapi (>=0.123.8,<0.124.0)",
+    "uvicorn (>=0.38.0,<0.39.0)",
+    "mlflow (>=3.6.0,<4.0.0)",
+    "pydantic (>=2.12.5,<3.0.0)",
+    "python-dotenv (>=1.2.1,<2.0.0)",
+    "langchain (>=1.1.0,<2.0.0)",
+    "langchain-community (>=0.4.1,<0.5.0)",
+    "sentence-transformers (>=5.1.2,<6.0.0)",
+    "faiss-cpu (>=1.13.0,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
