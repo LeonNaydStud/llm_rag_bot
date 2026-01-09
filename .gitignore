@@ -1,25 +1,88 @@
-# macOS
-.DS_Store
-
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.pdb
+*.py[cod]
+*$py.class
 
-# Virtualenv (Poetry will store in .venv if configured)
-.venv/
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+venv.bak/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Poetry / Pipenv
+.poetry/
+__pypackages__/
+poetry.lock
+Pipfile.lock
 
 # PyCharm
 .idea/
+*.iml
 
-# MLflow artifacts
-mlflow/
+# VSCode
+.vscode/
 
-# HuggingFace cache
-huggingface/
+# macOS
+.DS_Store
 
-# Models
-models/
+# Logs
+*.log
 
+# Python coverage
+.coverage
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# FastAPI / Uvicorn
+*.db
+*.sqlite3
+*.sqlite
+chroma_db/
+*.bak
+
+# Transformers / HuggingFace caches
+~/.cache/huggingface/
+~/.cache/torch/
+*.safetensors
+*.bin
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+
+# Temporary files
+*.tmp
+*.swp
+*.lock
