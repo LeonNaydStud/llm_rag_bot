@@ -1,42 +1,39 @@
-[project]
+[tool.poetry]
 name = "llm-rag-bot"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "Leonid Naydanov",email = "najdanov.2020@stud.nstu.ru"}
-]
+authors = ["Leonid Naydanov <najdanov.2020@stud.nstu.ru>"]
 readme = "README.md"
-requires-python = ">=3.12,<3.13"
-dependencies = [
-    "fastapi (>=0.123.8,<0.124.0)",
-    "uvicorn (>=0.38.0,<0.39.0)",
-    "mlflow (>=3.6.0,<4.0.0)",
-    "pydantic (>=2.12.5,<3.0.0)",
-    "python-dotenv (>=1.2.1,<2.0.0)",
-    "langchain (>=1.1.0,<2.0.0)",
-    "langchain-community (>=0.4.1,<0.5.0)",
-    "sentence-transformers (>=5.1.2,<6.0.0)",
-    "faiss-cpu (>=1.13.0,<2.0.0)",
-    "openai (>=2.9.0,<3.0.0)",
-    "tiktoken (>=0.12.0,<0.13.0)",
-    "accelerate (>=1.12.0,<2.0.0)",
-    "langchain-chroma (>=1.1.0,<2.0.0)",
-    "langchain-text-splitters (>=1.1.0,<2.0.0)",
-    "langchain-huggingface (>=1.2.0,<2.0.0)",
-    "transformers (>=4.57.3,<5.0.0)",
-    "torch (>=2.9.1,<3.0.0)",
-    "chromadb (>=1.4.0,<2.0.0)",
-    "beautifulsoup4 (>=4.14.3,<5.0.0)",
-    "bitsandbytes (>=0.49.0,<0.50.0)",
-    "pydantic-settings (>=2.12.0,<3.0.0)"
-]
+packages = [{include = "llm_rag_bot"}]
 
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+fastapi = ">=0.123.8,<0.124.0"
+uvicorn = {extras = ["standard"], version = ">=0.38.0,<0.39.0"}
+mlflow = ">=3.6.0,<4.0.0"
+pydantic = ">=2.12.5,<3.0.0"
+python-dotenv = ">=1.2.1,<2.0.0"
+langchain = ">=1.1.0,<2.0.0"
+langchain-community = ">=0.4.1,<0.5.0"
+sentence-transformers = ">=5.1.2,<6.0.0"
+faiss-cpu = ">=1.13.0,<2.0.0"
+openai = ">=2.9.0,<3.0.0"
+tiktoken = ">=0.12.0,<0.13.0"
+accelerate = ">=1.12.0,<2.0.0"
+langchain-chroma = ">=1.1.0,<2.0.0"
+langchain-text-splitters = ">=1.1.0,<2.0.0"
+langchain-huggingface = ">=1.2.0,<2.0.0"
+transformers = ">=4.57.3,<5.0.0"
+torch = ">=2.9.1,<3.0.0"
+chromadb = ">=1.4.0,<2.0.0"
+beautifulsoup4 = ">=4.14.3,<5.0.0"
+bitsandbytes = ">=0.49.0,<0.50.0"
+pydantic-settings = ">=2.12.0,<3.0.0"
+requests = ">=2.32.5,<3.0.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = ">=7.1.0,<8.0.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
-
-[dependency-groups]
-dev = [
-    "ipykernel (>=7.1.0,<8.0.0)"
-]
